@@ -145,9 +145,9 @@ def rhymes(word,lemma = "",variation=0):
     rhyme_output = rhyme(word,lemma,variation)
     try:
         if variation == "all":
-            return list(dict.fromkeys([l1 for l2 in [[minidict["word"] for minidict in rhymes_dict[rhyme_word]] for rhyme_word in rhyme_output] for l1 in l2]))
+            return list(dict.fromkeys([l1 for l2 in [[minidict["word"] for minidict in rhymes_dict[rhyme_word] if minidict["word"] != word] for rhyme_word in rhyme_output] for l1 in l2]))
         else:
-            return list(dict.fromkeys([rhyme["word"] for rhyme in rhymes_dict[rhyme_output]]))
+            return list(dict.fromkeys([rhyme["word"] for rhyme in rhymes_dict[rhyme_output] if rhyme["word"] != word]))
     except:
         return []
     
