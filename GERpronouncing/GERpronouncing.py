@@ -237,6 +237,6 @@ def meters(word,lemma = "",variation=0):
 # output: list of words with the same meter pattern (list)
 def meters_like(meter_pattern,levels=True):
     try:
-        return list(dict.fromkeys([minidict["lemma"] for minidict in meters_dict[meter_pattern]]))
+        return list(dict.fromkeys([minidict["word"] for minidict in meters_dict[meter_pattern]]))
     except:
         return []
