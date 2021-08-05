@@ -15,7 +15,7 @@ pip install git+https://github.com/JBreuerPY/GERpronouncing
 
 
 ```python
-import GERpronouncing.GERpronouncing as gp
+import GERpronouncing as gp
 ```
 
 # 1. Getting started: IPA
@@ -202,37 +202,15 @@ print(gp.lemmas("Montage"))
 #### 5.2 Looking up possible forms of lemmas
 
 The `GERpronouncing.forms_of(word)` function returns a list of forms of a given lemma.
-The `info` parameter defines which information of the forms will be returned in a list
-it accepts the strings: `"words", "ipa", "rhymes", "syllables", "meters"`
-- input: lemma (string), info (integer, default="words")
+- input: lemma (string)
 - output: forms of the given lemma (list)
 
 
 ```python
 print(gp.forms_of("Montag"))
-print(gp.forms_of("Montag",info="ipa"))
-print(gp.forms_of("Montag",info="rhymes"))
-print(gp.forms_of("Montag",info="syllables"))
-print(gp.forms_of("Montag",info="meters"))
-print()
-print(gp.forms_of("Montage"))
-print(gp.forms_of("Montage",info="ipa"))
-print(gp.forms_of("Montage",info="rhymes"))
-print(gp.forms_of("Montage",info="syllables"))
-print(gp.forms_of("Montage",info="meters"))
 ```
 
     ['Montages', 'Montag', 'Montagen', 'Montage', 'Montags']
-    ['ˈmoːntaːɡəs', 'ˈmoːnˌtaːk', 'ˈmoːnˌtaːɡn̩', 'ˈmoːntaːɡə', 'ˈmoːnˌtaːɡə', 'ˈmoːntaːk', 'ˈmoːntaːks']
-    ['oːntaːɡəs', 'oːnˌtaːk', 'oːnˌtaːɡn̩', 'oːntaːɡə', 'oːnˌtaːɡə', 'oːntaːk', 'oːntaːks']
-    ['3', '2']
-    ['100', '12', '120', '10']
-    
-    ['Montage', 'Montagen']
-    ['mɔnˈtaːʒə', 'mɔnˈtaːʒn̩']
-    ['aːʒə', 'aːʒn̩']
-    ['3']
-    ['010']
     
 
 
