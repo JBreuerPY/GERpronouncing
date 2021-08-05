@@ -1,6 +1,6 @@
+LICENSE.txt
 README.md
 setup.py
-GERpronouncing/GERpronouncing.py
 GERpronouncing/__init__.py
 GERpronouncing.egg-info/PKG-INFO
 GERpronouncing.egg-info/SOURCES.txt
