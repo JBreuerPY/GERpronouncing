@@ -16,7 +16,7 @@ Description:
         
         # Installing the package from the github directory
         ```python
-        pip install git+https://github.com/JBreuerPY/pronouncingTEST
+        pip install git+https://github.com/JBreuerPY/GERpronouncing
         ```
         
         # Importing the module like this
@@ -77,9 +77,9 @@ Description:
         print(gp.rhyme("Bug",lemma="Bug",variation="all"))
         ```
         
-            uːk
             aɡ
-            ['uːk', 'aɡ']
+            uːk
+            ['aɡ', 'uːk']
             
         
         #### 2.2 Create a list of rhyming words
@@ -98,9 +98,9 @@ Description:
         print(gp.rhymes("überfahren",variation="all")[:5])
         ```
         
-            ['vorüberfahren', 'herüberfahren']
-            ['Exemplaren', 'binokularen', 'granularen', 'polaren', 'Kanaren']
-            ['vorüberfahren', 'herüberfahren', 'Exemplaren', 'binokularen', 'granularen']
+            ['herüberfahren', 'überfahren', 'vorüberfahren']
+            ['Bibliothekaren', 'viviparen', 'solaren', 'Husaren', 'Zaren']
+            ['herüberfahren', 'überfahren', 'vorüberfahren', 'Bibliothekaren', 'viviparen']
             
         
         # 3. Syllables
@@ -131,7 +131,7 @@ Description:
         print(gp.same_syllables("Computerlinguistik")[:5])
         ```
         
-            ['Tante-Emma-Ladens', 'Computerfachmanne', 'rechtswissenschaftlichem', 'kommunikative', 'Zigarrengeruche']
+            ['Lüftungsanlagenbaus', 'hinaufgeklommene', 'medikamentierter', 'graphithaltigeres', 'Institutsleiterin']
             
         
         # 4. Meter
@@ -155,9 +155,9 @@ Description:
         print(gp.meter("übersetzen",variation="all"))
         ```
         
-            2010
             1020
-            ['2010', '1020']
+            2010
+            ['1020', '2010']
             
         
         #### 4.2 Creating a list of words following the same meter pattern
@@ -172,7 +172,7 @@ Description:
         print(gp.meters("Veranstaltung")[:5])
         ```
         
-            ['geflimmertem', 'beratender', 'wattierendem', 'gefälligsten', 'frigideres']
+            ['gecharterte', 'bewertenden', 'durchgeistigter', 'beträchtliche', 'begönnerte']
             
         
         #### 4.3 Creating a list of words using a self defined metre pattern
@@ -187,7 +187,7 @@ Description:
         print(gp.meters_like("10")[:5])
         ```
         
-            ['beaten', 'trommle', 'Kraute', 'Schwindels', 'wurzle']
+            ['tätschlet', 'handeln', 'langen', 'tempern', 'Classics']
             
         
         # 5. Lemmas
@@ -204,7 +204,7 @@ Description:
         print(gp.lemmas("Montage"))
         ```
         
-            ['Montag', 'Montage']
+            ['Montage', 'Montag']
             
         
         #### 5.2 Looking up possible forms of lemmas
@@ -230,17 +230,17 @@ Description:
         print(gp.forms_of("Montage",info="meters"))
         ```
         
-            ['Montags', 'Montag', 'Montage', 'Montage', 'Montag', 'Montagen', 'Montages']
-            ['ˈmoːntaːks', 'ˈmoːntaːk', 'ˈmoːntaːɡə', 'ˈmoːnˌtaːɡə', 'ˈmoːnˌtaːk', 'ˈmoːnˌtaːɡn̩', 'ˈmoːntaːɡəs']
-            ['oːntaːks', 'oːntaːk', 'oːntaːɡə', 'oːnˌtaːɡə', 'oːnˌtaːk', 'oːnˌtaːɡn̩', 'oːntaːɡəs']
-            [2, 2, 3, 3, 2, 3, 3]
-            ['10', '10', '100', '120', '12', '120', '100']
+            ['Montages', 'Montag', 'Montagen', 'Montage', 'Montags']
+            ['ˈmoːntaːɡəs', 'ˈmoːnˌtaːk', 'ˈmoːnˌtaːɡn̩', 'ˈmoːntaːɡə', 'ˈmoːnˌtaːɡə', 'ˈmoːntaːk', 'ˈmoːntaːks']
+            ['oːntaːɡəs', 'oːnˌtaːk', 'oːnˌtaːɡn̩', 'oːntaːɡə', 'oːnˌtaːɡə', 'oːntaːk', 'oːntaːks']
+            ['3', '2']
+            ['100', '12', '120', '10']
             
-            ['Montagen', 'Montage']
-            ['mɔnˈtaːʒn̩', 'mɔnˈtaːʒə']
-            ['aːʒn̩', 'aːʒə']
-            [3, 3]
-            ['010', '010']
+            ['Montage', 'Montagen']
+            ['mɔnˈtaːʒə', 'mɔnˈtaːʒn̩']
+            ['aːʒə', 'aːʒn̩']
+            ['3']
+            ['010']
             
         
         
